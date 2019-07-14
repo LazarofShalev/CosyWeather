@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="74" id="KGk-i7-Jjw" customClass="weatherCell" customModule="Cosy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="oV9-3f-Iv5">
+                        <rect key="frame" x="7" y="24" width="86" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-WD-lIl">
+                        <rect key="frame" x="121" y="7" width="93" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vo1-eF-AEd">
+                        <rect key="frame" x="122" y="37" width="115" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy2" translatesAutoresizingMaskIntoConstraints="NO" id="Xv8-3P-zf4">
+                        <rect key="frame" x="245" y="1" width="70" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Nwh-wb-Cqd"/>
+                            <constraint firstAttribute="height" constant="70" id="fS4-IT-PvZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Xv8-3P-zf4" secondAttribute="trailing" constant="5" id="1Dy-pk-eng"/>
+                    <constraint firstItem="Vo1-eF-AEd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="122" id="4Eb-Df-FjH"/>
+                    <constraint firstItem="oV9-3f-Iv5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="4gd-Ox-2sS"/>
+                    <constraint firstItem="c1v-WD-lIl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="5fh-fO-1Rt"/>
+                    <constraint firstItem="c1v-WD-lIl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="121" id="BXD-Se-bV3"/>
+                    <constraint firstItem="oV9-3f-Iv5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="LaB-O3-qtA"/>
+                    <constraint firstAttribute="trailing" secondItem="c1v-WD-lIl" secondAttribute="trailing" constant="106" id="Pav-EJ-8ZE"/>
+                    <constraint firstAttribute="bottom" secondItem="oV9-3f-Iv5" secondAttribute="bottom" constant="28" id="WcG-40-2DM"/>
+                    <constraint firstItem="Xv8-3P-zf4" firstAttribute="leading" secondItem="Vo1-eF-AEd" secondAttribute="trailing" constant="8" id="YCe-F7-e49"/>
+                    <constraint firstItem="Xv8-3P-zf4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="Yg1-8Z-vLI"/>
+                    <constraint firstAttribute="bottom" secondItem="Xv8-3P-zf4" secondAttribute="bottom" constant="2.5" id="gws-i3-frQ"/>
+                    <constraint firstAttribute="bottom" secondItem="c1v-WD-lIl" secondAttribute="bottom" constant="44.5" id="gzB-nj-hRJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Vo1-eF-AEd" secondAttribute="bottom" constant="15.5" id="j9Y-SG-vDp"/>
+                    <constraint firstAttribute="trailing" secondItem="oV9-3f-Iv5" secondAttribute="trailing" constant="227" id="okt-CM-Clg"/>
+                    <constraint firstItem="Vo1-eF-AEd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="37" id="u3x-kM-RoE"/>
+                    <constraint firstAttribute="trailing" secondItem="Vo1-eF-AEd" secondAttribute="trailing" constant="83" id="zVP-fA-ZfW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="DayLabel" destination="oV9-3f-Iv5" id="uGY-MO-Ebb"/>
+                <outlet property="DescriptionLabel" destination="Vo1-eF-AEd" id="i1U-CV-YyW"/>
+                <outlet property="TempLabel" destination="c1v-WD-lIl" id="hv1-r5-1xa"/>
+                <outlet property="WeatherIconImageView" destination="Xv8-3P-zf4" id="0z1-Eg-sDc"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="162.72321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cloudy2" width="64" height="64"/>
+    </resources>
+</document>
