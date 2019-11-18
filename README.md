@@ -1,6 +1,8 @@
 # CosyWeather
 
-Cosy Weather is a very accurate weather forecasting iOS application that is powered by open weather map API, in the app you can get the current day plus the next 5 days weather condition by your location or by a city name you can enter.
+weather forecasting iOS application that powered by open
+weather map API, get the current day plus and the next 5 days weather condition 
+by current location or by entering a city name.
 
 **Technologies**
 - Xcode tools in order to build a GUI - Lists, UIView's, Custom buttons etc. 
