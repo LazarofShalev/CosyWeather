@@ -1,4 +1,4 @@
-# CosyWeather
+# CozyWeather
 
 weather forecasting iOS application that powered by open
 weather map API, get the current day plus and the next 5 days weather condition 
